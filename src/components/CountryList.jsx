@@ -2,10 +2,13 @@ import CountryItem from "./CountryItem";
 import styles from "./CountryList.module.css";
 import Spinner from "./Spinner";
 import Message from "./Message";
-import PropTypes from "prop-types";
+import { useCities } from "../contexts/CitiesContext";
+// import PropTypes from "prop-types";
 
 /* eslint-disable */
-function CountryList({ cities, isLoading }) {
+function CountryList() {
+  const { cities, isLoading } = useCities();
+
   if (isLoading) return <Spinner />;
 
   if (!cities.length)
@@ -28,9 +31,9 @@ function CountryList({ cities, isLoading }) {
   );
 }
 
-CountryList.propTypes = {
-  cities: PropTypes.array.isRequired,
-  isLoading: PropTypes.bool,
-};
+// CountryList.propTypes = {
+//   cities: PropTypes.array.isRequired,
+//   isLoading: PropTypes.bool,
+// };
 
 export default CountryList;

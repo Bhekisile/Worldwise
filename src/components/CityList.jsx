@@ -2,9 +2,12 @@ import CityItem from "./CityItem";
 import styles from "./CityList.module.css";
 import Spinner from "./Spinner";
 import Message from "./Message";
-import PropTypes from 'prop-types';
+import { useCities } from "../contexts/CitiesContext";
+// import PropTypes from 'prop-types';
 
-function CityList({ cities, isLoading }) {
+function CityList() {
+  const { cities, isLoading } = useCities();
+
   if (isLoading) return <Spinner />;
 
   if (!cities.length)
@@ -21,9 +24,9 @@ function CityList({ cities, isLoading }) {
   );
 }
 
-CityList.propTypes = {
-  cities: PropTypes.array.isRequired,
-  isLoading: PropTypes.bool,
-}
+// CityList.propTypes = {
+//   cities: PropTypes.array.isRequired,
+//   isLoading: PropTypes.bool,
+// }
 
 export default CityList;
