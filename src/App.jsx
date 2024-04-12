@@ -11,8 +11,6 @@ import City from "./components/City";
 import Form from "./components/Form";
 import { CitiesProvider } from "./contexts/CitiesContext";
 
-// const BASE_URL = "http://localhost:8000";
-
 function App() {
 
   return (

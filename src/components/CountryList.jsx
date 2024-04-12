@@ -3,9 +3,7 @@ import styles from "./CountryList.module.css";
 import Spinner from "./Spinner";
 import Message from "./Message";
 import { useCities } from "../contexts/CitiesContext";
-// import PropTypes from "prop-types";
 
-/* eslint-disable */
 function CountryList() {
   const { cities, isLoading } = useCities();
 
@@ -30,10 +28,5 @@ function CountryList() {
     </ul>
   );
 }
-
-// CountryList.propTypes = {
-//   cities: PropTypes.array.isRequired,
-//   isLoading: PropTypes.bool,
-// };
 
 export default CountryList;
