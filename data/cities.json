@@ -37,18 +37,6 @@
       "id": "98443197"
     },
     {
-      "id": "ea5a",
-      "cityName": "Llo",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2024-04-15T09:27:43.724Z",
-      "notes": "note",
-      "position": {
-        "lat": "42.424343740460515",
-        "lng": "2.1282112967833826"
-      }
-    },
-    {
       "id": "4837",
       "cityName": "Mula",
       "country": "Spain",
@@ -58,18 +46,6 @@
       "position": {
         "lat": "37.91192305260108",
         "lng": "-1.4956601034993635"
-      }
-    },
-    {
-      "id": "a1cd",
-      "cityName": "Almudevar",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-04-15T09:43:01.830Z",
-      "notes": "ghytghyt",
-      "position": {
-        "lat": "42.11489670555664",
-        "lng": "-0.5738897083931361"
       }
     }
   ]
