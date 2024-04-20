@@ -20,7 +20,7 @@ function reducer(state, action) {
     case 'cities/loaded': 
       return{
         ...state, isLoading: false, cities: action.payload,
-      }
+      };
     
 
     case "city/loaded":
